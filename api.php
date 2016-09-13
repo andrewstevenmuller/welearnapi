@@ -17,9 +17,9 @@ function login_user() {
     $usr_id = getID($_POST["email"], $_POST["password"]);
 
     if($usr_id == -1) {
-      echo "Failed to login";
+	     echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/error'>";
     } else {
-      echo "Logged in!";
+      echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/mainMenu'>";
     }
   }
 }
@@ -42,10 +42,10 @@ function register_user(){
 		                            $_POST["password1"]);
 
     	if($usr_reg == -1) {
-      		echo "Failed to register";
+      		echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/signup'>";
     	} 
 	else {
-      		echo "Register successful!";
+      		echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/login'>";
     	}
   	}
 }

@@ -1,7 +1,7 @@
 <?php
-define("HOST", "172.16.38.210");
+define("HOST", "127.0.0.1");
 define("USER", "root");
-define("PASS", "");
+define("PASS", "admin");
 define("DB", "we_learn");
 
 function _ConString() {

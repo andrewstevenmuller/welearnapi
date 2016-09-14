@@ -17,9 +17,9 @@ function login_user() {
     $usr_id = getID($_POST["email"], $_POST["password"]);
 
     if($usr_id == -1) {
-	     echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/error'>";
+	     echo "<meta http-equiv='refresh' content='1;url=http://172.16.38.210:8100/#/error'>";
     } else {
-      echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/mainMenu'>";
+       echo "<meta http-equiv='refresh' content='1;url=http://172.16.38.210:8100/#/mainMenu'>";
     }
   }
 }
@@ -42,10 +42,10 @@ function register_user(){
 		                            $_POST["password1"]);
 
     	if($usr_reg == -1) {
-      		echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/signup'>";
+      		echo "<meta http-equiv='refresh' content='1;url=http://172.16.38.210:8100/#/signup'>";
     	} 
 	else {
-      		echo "<meta http-equiv='refresh' content='1;url=http://localhost:8100/#/login'>";
+      		echo "<meta http-equiv='refresh' content='1;url=http://172.16.38.210:8100/#/login'>";
     	}
   	}
 }
